@@ -17,7 +17,8 @@ jobs:
         run: echo Hello, World!
 
       - name: Download content
-        uses: actions/download-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: static-site
+          path: out/
 
