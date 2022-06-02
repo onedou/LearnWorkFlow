@@ -16,8 +16,8 @@ jobs:
       - name: Run script
         run: echo `pwd`
 
-      - name: Download content
+      - name: Upload content
         uses: actions/upload-artifact@v3
         with:
           name: static-site
-          path: out/
+          path: ./
