@@ -12,6 +12,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-    
+
       - name: Run script
         run: echo Hello, World!
+
+      - name: Download content
+        uses: actions/download-artifact@v2
+        with:
+          name: static-site
+
