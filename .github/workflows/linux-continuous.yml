@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+  workflow-dispatch:
+
+jobs:
+  build:
+    runs-on: unbuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+    
+      - name: Run script
+        run: echo Hello, World!
